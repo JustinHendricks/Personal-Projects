@@ -1,3 +1,7 @@
+#Code written 8/24/19
+#Automate the Boring Stuff / Chapter 6 / Practice Project: Table Printer
+
+
 tableData = [['apples', 'oranges', 'cherries', 'banana'],
              ['Alice', 'Bob', 'Carol', 'David'],
              ['dogs', 'cats', 'moose', 'goose']]
