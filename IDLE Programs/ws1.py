@@ -16,6 +16,7 @@ def googletool():
                 search = pyperclip.paste()
             while searcher == True:
                 if search == 'leave()':
+                    break
                     searcher = False
                 if ' ' in search:
                     search = search.replace(' ', '+' )
