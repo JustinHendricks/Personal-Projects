@@ -1,3 +1,4 @@
+#I wanted to practice 2D arrays and I needed a game to start learning machine learning with.
 import random
 global winner
 
@@ -54,7 +55,7 @@ def win_row(): #checks if a player has gotten three in a horizontal row
                 winner = board[r][s]
                 return True         
         in_a_row = 1
-def win_column():
+def win_column(): #Checks for 3 in a row vertically
     global winner
     in_a_row = 1
     r = 0
@@ -72,7 +73,7 @@ def win_column():
         c += 1
         in_a_row = 1
 
-def win_diagonal():
+def win_diagonal(): #checks for three in a row diagonally
     global winner
     in_a_row = 1
     r = 0
@@ -104,7 +105,7 @@ def win_diagonal():
                 r -= 1
                 c += 1
         
-def win_conditions():
+def win_conditions(): 
     row = win_row()
     column = win_column()
     diagonal = win_diagonal()
@@ -113,7 +114,7 @@ def win_conditions():
     elif len(spaces_available) < 1:
         return 'tie'
 
-def reset(spaces):
+def reset(spaces): #resets the board after a game
     for r in range(len(board)):
                 for c in range(len(board[r])):
                     board[r][c] = ' '
